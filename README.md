@@ -1,0 +1,1 @@
+This project is a tool to discover the missing dependencies of libraries to be run on MicroEJ OS.
