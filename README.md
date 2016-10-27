@@ -19,11 +19,12 @@ This project is a tool to discover the missing dependencies of libraries to be r
 2. Drop all your jars into [classpath](classpath/) folder.
 3. Unzip MicroEJ repository into [againstClasspath](againstClasspath/) folder.
 4. Set `OFFLINE` variable in [DependencyDiscoverer.java](src/ej/tools/dependencydiscoverer/DependencyDiscoverer.java) to `true`.
-5. Use the launch configuration "DependencyDiscoverer" provided by clicking Run -> Run Configuration
-6. A **result.txt** file will be generated at the root of the project.
+5. Select **Run As -> Java Application**
+6. Double click on **DependencyDiscoverer**
+7. A **result.txt** file will be generated at the root of the project.
 
 ## Add additional MicroEJ libraries.
-You may receive some additional MicroEJ libraries, to include them, drop them into [againstClasspath](againstClasspath).
+You may have some additional MicroEJ libraries, to include them, drop them into [againstClasspath](againstClasspath) folder.
 
 # Requirements
 * A JRE 7 or higher.
