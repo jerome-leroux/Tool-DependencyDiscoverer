@@ -50,7 +50,7 @@ public class DependencyDiscoverer {
 			downloadRepository(repoDir);
 		}
 
-		System.out.println("Starts dependency discoverer.");
+		System.out.println("Starting dependency discoverer.");
 		DependencyDiscovererBatch.main(new String[]{
 				"-classpath",
 				getJars(classpathDir),
