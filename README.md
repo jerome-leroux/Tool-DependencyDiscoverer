@@ -15,13 +15,14 @@ This project is a tool to discover the missing dependencies of libraries to be r
 3. A **result.txt** file will be generated at the root of the project.
 
 ## Offline
-1. Get MicroEJ repository on [developer.microej.com](http://developer.microej.com).
-2. Drop all your jars into [classpath](classpath/) folder.
+1. Drop all your jars into [classpath](classpath/) folder.
+2. Get MicroEJ offline repository from [developer.microej.com/4.0/ivy](http://developer.microej.com/4.0/ivy).
 3. Unzip MicroEJ repository into [againstClasspath](againstClasspath/) folder.
 4. Set `OFFLINE` variable in [DependencyDiscoverer.java](src/ej/tools/dependencydiscoverer/DependencyDiscoverer.java) to `true`.
-5. Select **Run As -> Java Application**
-6. Double click on **DependencyDiscoverer**
-7. A **result.txt** file will be generated at the root of the project.
+5. Right click on DependencyDiscoverer project.
+6. Select **Run As -> Java Application**
+7. Double click on **DependencyDiscoverer**
+8. A **result.txt** file will be generated at the root of the project.
 
 ## Add additional MicroEJ libraries.
 You may have some additional MicroEJ libraries, to include them, drop them into [againstClasspath](againstClasspath) folder.
