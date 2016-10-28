@@ -27,6 +27,33 @@ This project is a tool to discover the missing dependencies of libraries to be r
 ## Add additional MicroEJ libraries.
 You may have some additional MicroEJ libraries, to include them, drop them into [againstClasspath](againstClasspath) folder.
 
+## Understand the result.
+Open the **result.txt** file with a text editor. Each lines contains a missing dependency. If the file is empty, your librarie is compatible with MicroEJ OS!
+
+Each line may be :
+  * A **class** described as `package.of.class.Class`.
+  * An **inner class** described as `package.of.class.Class$InnerClassName` (InnerClassName is a number if it is an anonymous class).
+  * A **field** described as `package.of.class.Class.fieldName`.
+  * A **constructor** described as `package.of.class.Class.<init>({parameters types see under})V`.
+  * A **method** described as  `package.of.class.Class.methodName({parameters types see under}){return type}`.
+  
+The types may be:
+  * **B**: byte
+  * **C**: char
+  * **D**: double
+  * **F**: float
+  * **I**: int
+  * **J**: long
+  * **L{ClassName};**: reference to a {ClassName} instance
+  * **S**: short
+  * **Z**: boolean
+  * **[{type}**: array of {type} (type may be an array it self)
+
+## Port a library to MicroEJ OS
+To port your library with missing dependencies into MicroEJ OS this steps shall be taken:
+1. Contact MicroEJ, some standard libraries are available on demand. 
+2. Refactor your libraries to avoid those dependencies.
+
 # Requirements
 * A JRE 7 or higher.
 
