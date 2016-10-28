@@ -14,7 +14,7 @@ Bugfixes:
 
 ## 1.0.1 (2016-10-28)
 Features:
-  * Complete the read me to understand the result.
+  * Completed the [README](README.md) with an explanation of how to interpret the results.
    
 ## 1.0.0 (2016-10-27)
 Features:
