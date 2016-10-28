@@ -46,6 +46,7 @@ The types may be:
   * **J**: long
   * **L{ClassName};**: reference to a {ClassName} instance
   * **S**: short
+  * **V**: void
   * **Z**: boolean
   * **[{type}**: array of {type} (type may be an array it self)
 
