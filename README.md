@@ -1,7 +1,7 @@
 <!--
 	Markdown
 	Copyright 2016 IS2T. All rights reserved.
-	Use of this source code is governed by a BSD-style license that can be found at http://www.is2t.com/open-source-bsd-license/.
+	IS2T PROPRIETARY. Use is subject to license terms.
 -->
 # Overview
 This project is a tool to discover the missing dependencies of libraries to be run on MicroEJ OS.
