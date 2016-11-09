@@ -4,24 +4,24 @@
 	IS2T PROPRIETARY. Use is subject to license terms.
 -->
 # Overview
-This project is a tool to discover the missing dependencies of libraries to be run on MicroEJ OS.
+This project is a tool to list all dependencies of a Java code and to discover the missing dependencies of this Java code against MicroEJ OS.
 
 # Usage
 ## Online
-1. Drop all your jars into [classpath](classpath/) folder.
-2. Right click on DependencyDiscoverer project.
-3. Select **Run As -> Java Application**
-4. Double click on **DependencyDiscoverer**
+1. In your MicroEJ or Eclipse workspace, import this project and drop all your JARs into [classpath](classpath/) folder.
+2. Right click on **DependencyDiscoverer** project.
+3. Select **Run As -> Java Application**.
+4. Double click on **DependencyDiscoverer**.
 3. A **result.txt** file will be generated at the root of the project.
 
 ## Offline
-1. Drop all your jars into [classpath](classpath/) folder.
-2. Get MicroEJ offline repository from [developer.microej.com/4.0/ivy](http://developer.microej.com/4.0/ivy).
+1. Drop all your JARs into [classpath](classpath/) folder.
+2. Get a MicroEJ offline repository (zip archive). For example repository 4.0 from [developer.microej.com/4.0/ivy](http://developer.microej.com/4.0/ivy).
 3. Unzip MicroEJ repository into [againstClasspath](againstClasspath/) folder.
 4. Set `OFFLINE` variable in [DependencyDiscoverer.java](src/ej/tools/dependencydiscoverer/DependencyDiscoverer.java) to `true`.
-5. Right click on DependencyDiscoverer project.
-6. Select **Run As -> Java Application**
-7. Double click on **DependencyDiscoverer**
+5. Right click on **DependencyDiscoverer** project.
+6. Select **Run As -> Java Application**.
+7. Double click on **DependencyDiscoverer**.
 8. A **result.txt** file will be generated at the root of the project.
 
 ## Adding additional MicroEJ libraries.
@@ -51,11 +51,12 @@ The types may be:
   * **[{type}**: array of {type} (type may be an array it self)
 
 ## Porting a library to MicroEJ OS
-To port your library with missing dependencies into MicroEJ OS, the following steps shall be taken:
+To port your library with missing dependencies to MicroEJ OS, the following steps shall be taken:
 1. Contact MicroEJ support, some common libraries are available on demand. 
 2. Refactor your libraries to avoid those dependencies.
 
 # Requirements
+* MicroEJ Studio 4.0 or later, or MicroEJ SDK4.0 or later, or Eclipse 4.2 or later.
 * A JRE 7 or higher.
 
 # Dependencies
