@@ -1,1 +1,5 @@
 /bin/
+result.txt
+againstClasspath/*
+classpath/*
+microej-4.0-repository/
